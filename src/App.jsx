@@ -13,9 +13,6 @@ function App() {
   let [pointX,setPointX] = useState(0)
   let [pointY,setPointY] = useState(0)
   let [clicked,setClicked] = useState('false')
-  let [resize, setResize] = useState('false')
-  let [scaling,setScaling] = useState('false')
-  let [rotating,setRotating] = useState('false')
 
   const checkDeselect = (e) => {
     // deselect when clicked on empty area
@@ -30,9 +27,6 @@ function App() {
       <span>Konva.js works!</span>
        <span>Shape Clicked : {clicked}</span>
        <span>Shape Dragged : {drag.isDragging?'true':'false'} </span>
-       <span>Shape Resized : {resize} </span>
-       <span>Shape Scaled : {scaling} </span>
-       <span>Shape Rotated : {rotating} </span>
        <span>x-axis : {pointX}</span>
        <span>y-axis : {pointY} </span>
       </div>
